@@ -11,7 +11,7 @@ void dfs(int vertex,int parent){
     // take the action in the vertex after entering the vertex(  niche jate hue )
     // 
   
-   
+    subtree_N[vertex] = 1;
   for(auto child:graph[vertex]){
    
     if(child==parent) continue;
@@ -29,7 +29,7 @@ void dfs(int vertex,int parent){
 
   //component 4 
   // take the action before exiting the vertex        ( upar jate hue )
-   subtree_N[vertex]+=vertex;
+  //  subtree_N[vertex]+=vertex;
 
 }
 void solve(){
